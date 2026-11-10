@@ -15,56 +15,121 @@
           <span class="wordmark-mark" aria-hidden="true">S</span>
           <span>servus<span class="wordmark-dot">.</span></span>
         </a>
-        <div class="topbar-note"><span class="status-dot"></span> A little Austrian German, every day</div>
+        <div class="topbar-note"><span class="status-dot"></span> Austrian German, for real life</div>
       </header>
 
-      <section class="practice" aria-labelledby="page-title">
-        <div class="intro">
-          <p class="eyebrow">Austrian German · Pocket practice</p>
-          <h1 id="page-title">Say it like<br><span>you live here.</span></h1>
-          <p class="intro-copy">Small words, local flavor. Translate the prompt and build your everyday Austrian vocabulary.</p>
+      <section class="welcome" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Österreichisch · CEFR practice A1–C2</p>
+          <h1 id="page-title">Find your<br><span>local voice.</span></h1>
+        </div>
+        <p class="welcome-copy">Build confidence for everyday Austria, one conversation at a time. Choose your level and jump into a skill.</p>
+      </section>
+
+      <section class="workspace" aria-label="Language practice">
+        <div class="level-bar">
+          <div class="level-heading">
+            <span class="section-kicker">YOUR LEVEL</span>
+            <span class="level-caption" id="level-caption">Getting started</span>
+          </div>
+          <nav class="level-tabs" aria-label="Choose your CEFR level">
+            <button type="button" class="level-tab is-active" data-level="A1" aria-pressed="true">A1</button>
+            <button type="button" class="level-tab" data-level="A2" aria-pressed="false">A2</button>
+            <button type="button" class="level-tab" data-level="B1" aria-pressed="false">B1</button>
+            <button type="button" class="level-tab" data-level="B2" aria-pressed="false">B2</button>
+            <button type="button" class="level-tab" data-level="C1" aria-pressed="false">C1</button>
+            <button type="button" class="level-tab" data-level="C2" aria-pressed="false">C2</button>
+          </nav>
         </div>
 
-        <section class="lesson" aria-label="Flashcard practice">
-          <div class="lesson-topline">
-            <div class="deck-label"><span class="deck-icon" aria-hidden="true">↗</span> EVERYDAY WORDS</div>
-            <div class="progress-copy"><span id="card-count">01</span><span class="progress-divider">/</span><span id="total-count">10</span></div>
-          </div>
-          <div class="progress-track" role="progressbar" aria-label="Deck progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1">
-            <span class="progress-fill"></span>
-          </div>
+        <div class="practice-layout">
+          <nav class="skill-nav" aria-label="Practice skill">
+            <button type="button" class="skill-tab is-active" data-skill="speaking" aria-pressed="true"><span class="skill-symbol">↗</span><span>Speaking</span><span class="skill-detail">Say it out loud</span></button>
+            <button type="button" class="skill-tab" data-skill="listening" aria-pressed="false"><span class="skill-symbol">♫</span><span>Listening</span><span class="skill-detail">Tune your ear</span></button>
+            <button type="button" class="skill-tab" data-skill="reading" aria-pressed="false"><span class="skill-symbol">▤</span><span>Reading</span><span class="skill-detail">Catch the meaning</span></button>
+            <button type="button" class="skill-tab" data-skill="writing" aria-pressed="false"><span class="skill-symbol">✎</span><span>Writing</span><span class="skill-detail">Find your words</span></button>
+            <button type="button" class="skill-tab" data-skill="grammar" aria-pressed="false"><span class="skill-symbol">§</span><span>Grammar</span><span class="skill-detail">CEFR grammar bank</span></button>
+          </nav>
 
-          <div class="prompt-area" aria-live="polite">
-            <p class="prompt-label">TRANSLATE INTO AUSTRIAN GERMAN</p>
-            <h2 id="prompt">Apricot</h2>
-            <p class="prompt-hint" id="prompt-hint">A fruit you’ll find in a Marillenknödel.</p>
-          </div>
-
-          <form id="answer-form" class="answer-form" novalidate>
-            <label for="answer">Your answer</label>
-            <div class="input-row">
-              <input id="answer" name="answer" type="text" autocomplete="off" placeholder="Type your translation…" aria-describedby="feedback" required>
-              <button class="check-button" type="submit"><span>Check</span><span aria-hidden="true">↗</span></button>
+          <section class="activity-panel" aria-live="polite" aria-label="Selected practice activity">
+            <div class="activity-topline">
+              <span class="deck-label"><span class="deck-icon" aria-hidden="true">↗</span><span id="activity-tag">SPEAKING · ROLE PLAY</span></span>
+              <span class="level-badge" id="activity-level">A1</span>
             </div>
-            <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
-          </form>
+            <p class="level-goal" id="level-goal"></p>
+            <div id="activity-content"></div>
+          </section>
+        </div>
+      </section>
 
-          <div class="answer-reveal" id="answer-reveal" hidden>
-            <span class="reveal-label">THE AUSTRIAN WORD</span>
-            <strong id="correct-answer"></strong>
+      <section class="video-section" aria-labelledby="video-title">
+        <div class="video-heading">
+          <div>
+            <p class="eyebrow">A little homework, if you fancy</p>
+            <h2 id="video-title">Austria, unscripted.</h2>
           </div>
-
-          <div class="lesson-footer">
-            <button class="text-button" id="give-up" type="button">Show answer</button>
-            <div class="score" aria-label="Session score">
-              <span class="score-item"><span class="score-mark correct-mark">✓</span><span id="correct-count">0</span></span>
-              <span class="score-item"><span class="score-mark wrong-mark">×</span><span id="missed-count">0</span></span>
+          <p>Real voices are the best ear training. Watch a short clip, then bring the words back here.</p>
+        </div>
+        <div class="video-picks">
+          <article class="video-pick">
+            <div class="video-mark video-mark-orf" aria-hidden="true"><span>ORF</span><i>ON</i></div>
+            <div class="video-copy">
+              <p class="video-kicker">NEWS REGISTER · ALL LEVELS</p>
+              <h3>Zeit im Bild &amp; ORF news</h3>
+              <p>Watch current ZIB, ZIB Flash, and short reports. Notice headline wording, formal phrases, and how speakers attribute information.</p>
             </div>
-            <button class="next-button" id="next-card" type="button" disabled>Next <span aria-hidden="true">→</span></button>
-          </div>
-        </section>
+            <a class="video-link" href="https://on.orf.at/" target="_blank" rel="noopener noreferrer">Browse ORF ON <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="video-pick">
+            <div class="video-mark" aria-hidden="true"><span>ATV</span><i>▶</i></div>
+            <div class="video-copy">
+              <p class="video-kicker">EVERYDAY SPEECH · ALL LEVELS</p>
+              <h3>Bauer sucht Frau Österreich</h3>
+              <p>Listen for greetings, regional words, informal grammar, and how people tell a story. Clips and availability vary by region.</p>
+            </div>
+            <a class="video-link" href="https://www.joyn.at/serien/bauer-sucht-frau" target="_blank" rel="noopener noreferrer">Watch on Joyn <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="video-note">ORF ON’s catalogue changes, so browse for a current ZIB or news clip. Companion exercises are original practice, not copied transcripts. Try one clip from each source and compare the register.</p>
+      </section>
 
-        <div class="session-note"><span class="note-rule"></span><span>Local words. Real-life confidence.</span><span class="note-rule"></span></div>
+      <section class="video-lab" id="video-lab" aria-labelledby="video-lab-title">
+        <div class="video-heading">
+          <div>
+            <p class="eyebrow">EXTRA PRACTICE · VIDEO PHRASE LAB</p>
+            <h2 id="video-lab-title">Catch it. Use it.</h2>
+          </div>
+          <p>Choose a source to practise its register: clear newsroom German from ORF or everyday Austrian speech from the farm. Exercises follow your selected CEFR level.</p>
+        </div>
+        <div class="lab-toolbar">
+          <div class="lab-source-tabs" role="group" aria-label="Choose a video source">
+            <button type="button" class="lab-source-button is-active" data-lab-source="orf" aria-pressed="true">ORF · Zeit im Bild</button>
+            <button type="button" class="lab-source-button" data-lab-source="bauer" aria-pressed="false">Bauer sucht Frau</button>
+          </div>
+          <p class="lab-meta">LEVEL <strong id="lab-level">A1</strong><span id="lab-count">1 / 2</span></p>
+        </div>
+        <article class="lab-card" aria-label="Video phrase and grammar exercise">
+          <div class="lab-card-topline">
+            <span class="deck-label" id="lab-register">ORF-STYLE · ORIGINAL EXAMPLE</span>
+            <span class="level-badge" id="lab-level-badge">A1</span>
+          </div>
+          <h3 class="activity-title" id="lab-title"></h3>
+          <p class="activity-description" id="lab-description"></p>
+          <div class="prompt-card">
+            <p class="prompt-overline">PHRASE</p>
+            <p class="prompt-text" id="lab-phrase" lang="de-AT"></p>
+            <p class="prompt-support" id="lab-meaning"></p>
+            <div class="grammar-example"><strong>Example</strong><span id="lab-example" lang="de-AT"></span></div>
+          </div>
+          <div id="lab-choices"></div>
+          <div class="activity-actions">
+            <button class="primary-action" type="button" data-lab-action="check">Check answer</button>
+            <button class="secondary-action" type="button" data-lab-action="next">Next phrase <span aria-hidden="true">→</span></button>
+          </div>
+          <p class="activity-status" id="lab-status" role="status"></p>
+          <div class="grammar-explanation" id="lab-explanation" hidden><strong>Why it works</strong><p id="lab-explanation-text"></p></div>
+        </article>
+        <p class="video-note">These are original study examples inspired by the two registers, not quotations or episode transcripts. Availability of video clips may vary by region.</p>
       </section>
 
       <footer class="page-footer">
