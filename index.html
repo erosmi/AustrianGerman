@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5ef">
+    <title>Servus, Deutsch! | Austrian German practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="index.html" aria-label="Servus, Deutsch! home">
+          <span class="wordmark-mark" aria-hidden="true">S</span>
+          <span>servus<span class="wordmark-dot">.</span></span>
+        </a>
+        <div class="topbar-note"><span class="status-dot"></span> A little Austrian German, every day</div>
+      </header>
+
+      <section class="practice" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow">Austrian German · Pocket practice</p>
+          <h1 id="page-title">Say it like<br><span>you live here.</span></h1>
+          <p class="intro-copy">Small words, local flavor. Translate the prompt and build your everyday Austrian vocabulary.</p>
+        </div>
+
+        <section class="lesson" aria-label="Flashcard practice">
+          <div class="lesson-topline">
+            <div class="deck-label"><span class="deck-icon" aria-hidden="true">↗</span> EVERYDAY WORDS</div>
+            <div class="progress-copy"><span id="card-count">01</span><span class="progress-divider">/</span><span id="total-count">10</span></div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Deck progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1">
+            <span class="progress-fill"></span>
+          </div>
+
+          <div class="prompt-area" aria-live="polite">
+            <p class="prompt-label">TRANSLATE INTO AUSTRIAN GERMAN</p>
+            <h2 id="prompt">Apricot</h2>
+            <p class="prompt-hint" id="prompt-hint">A fruit you’ll find in a Marillenknödel.</p>
+          </div>
+
+          <form id="answer-form" class="answer-form" novalidate>
+            <label for="answer">Your answer</label>
+            <div class="input-row">
+              <input id="answer" name="answer" type="text" autocomplete="off" placeholder="Type your translation…" aria-describedby="feedback" required>
+              <button class="check-button" type="submit"><span>Check</span><span aria-hidden="true">↗</span></button>
+            </div>
+            <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="answer-reveal" id="answer-reveal" hidden>
+            <span class="reveal-label">THE AUSTRIAN WORD</span>
+            <strong id="correct-answer"></strong>
+          </div>
+
+          <div class="lesson-footer">
+            <button class="text-button" id="give-up" type="button">Show answer</button>
+            <div class="score" aria-label="Session score">
+              <span class="score-item"><span class="score-mark correct-mark">✓</span><span id="correct-count">0</span></span>
+              <span class="score-item"><span class="score-mark wrong-mark">×</span><span id="missed-count">0</span></span>
+            </div>
+            <button class="next-button" id="next-card" type="button" disabled>Next <span aria-hidden="true">→</span></button>
+          </div>
+        </section>
+
+        <div class="session-note"><span class="note-rule"></span><span>Local words. Real-life confidence.</span><span class="note-rule"></span></div>
+      </section>
+
+      <footer class="page-footer">
+        <span>GREETINGS FROM AUSTRIA</span>
+        <span class="flag-stripe" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>TAKE IT ONE WORD AT A TIME</span>
+      </footer>
+    </main>
+  </body>
+</html>
